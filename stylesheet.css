@@ -1,0 +1,343 @@
+/*
+Original sticky footer was taken from
+https://css-tricks.com/couple-takes-sticky-footer/
+and has been slightly modified to fit the website.
+*/
+
+h1, html, body, #header, #logo, #search, #nav, #main, #footer, #productp{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+#header, #logo, #main, .nav, #footer, #search, #productp {
+    display: block;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    background-image: url("pics/background.jpg");
+    padding: 0;
+    font-size: 12px;
+    font-family: helvetica, sans-serif, arial;
+    height:100%;
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+#wrapper {
+    max-width: 1024px;
+    background-color: #161616;
+    margin: 0 auto;
+    height: auto;
+    min-height: calc(100vh - 60px);
+    
+}
+
+#header {
+    background-image: url("pics/header.jpg");
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+#search {
+    background-color: yellow;
+    padding: 10px;
+}
+
+#thisPage {
+    background-color: #161616;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.nav {
+    background-color: #161616;
+    margin: 0;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav a {
+    font-family: helvetica;
+    text-decoration: none;
+    padding: 20px;
+    display: inline;
+    margin: 0px auto;
+}
+
+.nav a:link {
+    color: white;
+}
+
+.nav a:visited {
+    color: white;
+
+}
+
+.nav a:hover {
+    color: grey;
+}
+
+.nav a:active {
+    color: white;
+}
+
+
+#main {
+    background-color: #161616;
+    margin: 0 auto;
+    padding: 10px;
+    height: 100%;
+    color: white;
+    
+}
+
+#main h1 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    width: 100%;
+}
+
+#main h3 {
+    padding-top: 20px;
+    border-top: 2px solid #fff;
+    width: 100%;
+}
+
+#main p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 85%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+#main a {
+    color: white;
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+#main a:hover {
+    text-shadow: 2px 2px 4px #000000;
+    text-decoration: underline;
+    color: grey;
+}
+
+#productp {
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#productp p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.product {
+    display: inline-block;
+    width: 175px;
+    margin: 10px auto;
+    padding: 15px;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.product p {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.product:hover {
+    box-shadow: 0px 5px 20px #000;
+}
+
+.product img {
+    height: 100px;
+}
+
+.product a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product a:hover {
+    color: white;
+}
+
+.product a:visited {
+    color: white;
+}
+
+.buybutton {
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    font-size: 10px;
+    text-align: center;
+    border: solid  1px #fff;
+    cursor: pointer;
+}
+
+.buybutton:hover {
+    text-decoration: underline;
+}
+
+.large {
+    padding: 10px 10px;
+    font-size: 12px;
+}
+
+.largepic {
+    height: 300px;
+}
+
+#localnav {
+    width: 100%;
+}
+
+#about {
+    width: 100%;
+}
+
+#form {
+    font-size: 12px;
+    font-family: helvetica, sans-serif, arial;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100%;
+}
+
+#form input {
+    width: 50%;
+    
+}
+
+#form fieldset {
+    border: 2px solid white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#form textarea {
+    width: 70%;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#submitbtn {
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    border: solid  1px #fff;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    max-width: 80px;
+}
+
+#submitbtn:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    height: 40px;
+    max-width: 1024px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    
+        .nav {
+        width: 100%;
+        float: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        }
+        
+        .nav a {
+        font-family: helvetica;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        margin: 0px auto;
+        }
+        
+        .nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        }
+    
+        .nav ul li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        }
+        
+}
+
+@media screen and (max-width: 370px) {
+
+    #header {
+    background-image: url("pics/header2.jpg");
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+    
+    .largepic {
+    height: 200px;
+    }
+
+}
