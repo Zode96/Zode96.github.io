@@ -15,7 +15,7 @@
 </style>
 </head>
 <body>
-    <script>
+    <script type="text/javascript">
         var fileTag = document.getElementById("filetag"),
     preview = document.getElementById("preview");
     
@@ -36,8 +36,9 @@ function changeImage(input) {
     reader.readAsDataURL(input.files[0]);
   }
 }
+</script>
 <input type="file" id="filetag">
 <img src="" id="preview">
- </script>
+
 </body>
 </html>
