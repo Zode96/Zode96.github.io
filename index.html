@@ -15,22 +15,29 @@
 </style>
 </head>
 <body>
-  <input type='file' onchange="readURL(this);" />
-    <img id="watch" src="#" alt="image" />
-    <script>     function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
+    <script>
+        var fileTag = document.getElementById("filetag"),
+    preview = document.getElementById("preview");
+    
+fileTag.addEventListener("change", function() {
+  changeImage(this);
+});
 
-                reader.onload = function (e) {
-                    $('#watch')
-                        .attr('src', e.target.result)
-                        .width(500)
-                        .height(1000);
-                };
+function changeImage(input) {
+  var reader;
 
-                reader.readAsDataURL(input.files[0]);
-            }
-     }
+  if (input.files && input.files[0]) {
+    reader = new FileReader();
+
+    reader.onload = function(e) {
+      preview.setAttribute('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+<input type="file" id="filetag">
+<img src="" id="preview">
  </script>
 </body>
 </html>
